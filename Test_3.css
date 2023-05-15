@@ -1,26 +1,143 @@
-.main{
-    max-width: 1212px;
-    max-height: 854px;
-    padding: 100px 100px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.main form{
-    width: 327px;
-    height: 64px;
-    border-radius: 4px;
-}
-
-.nav-items{
-    font-family: 'Poppins';
-}
-
-.text_1{
-    font-family: 'merriweather';
-    font-size: 18px;
+body {
+    font-family: 'Merriweather', sans-serif;
     color: #151B32;
 }
 
-.text_2{
-    font-family: 'poppins';
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    color: #151B32;
+    text-decoration: none;
+}
+
+.page_user {
+    height: 100vh;
+    background-color: #BFC8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* width: 1213px !important; */
+    height: 830px !important;
+    padding: 100px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.header .title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151B32;
+    margin-bottom: 24px;
+}
+
+.header_search {
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+.search_box {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151B32;
+}
+
+.menu__list {
+    gap: 8px
+}
+
+.menu__list li {
+    /* padding: 16px; */
+}
+
+.menu__list li:nth-child(2) {
+    background: #849FFF;
+    border-radius: 8px;
+}
+
+.menu__list li:nth-child(2) a {
+    color: #FFFFFF;
+}
+
+.menu__list li a {
+    display: inline-block;
+    padding: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*  */
+
+.main {
+    margin-top: 70px;
+}
+
+.list_user {
+    display: flex;
+    gap: 16px;
+}
+
+.users--item {
+    width: 327px;
+    height: 208px;
+    padding: 24px;
+    background: #FBFCFF;
+    border-radius: 16px;
+}
+
+.users--item:nth-child(2) {
+    border: 1px solid #BFC8E6;
+    box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+}
+
+.name {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 4px;
+}
+
+.city {
+    font-family: 'Poppins';
+    font-weight: 600;
     font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 18px;
+}
+
+.interest {
+    font-family: 'Poppins';
+    gap: 8px;
+}
+
+.interest__item {
+    padding: 2px 8px;
+    color: #516FD4;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
 }
