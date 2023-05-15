@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_1</title>
+</head>
+<body>
+    <h1>Tổng các số nguyên tố trong khoảng</h1>
+    <input type="text" id="num1" value="0">
+    <input type="text" id="num2" value="0"> <br>
+    <span id="result"></span> <br>
+    <input type="button" onclick="sum()" value="Tính tổng">
+    <script>
+        function sum() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            let sum=0;
+            if (a>=b) {
+                document.write("Vui lòng nhập giá trị b là 1 số lớn hơn giá trị a");
+            }
+            else {
+                for (let c=a+1; c<b;c++) {
+                    var check=true;
+                    for (var i=2; i<c-1;i++)
+                    {
+                        if (c%i==0){
+                            check=false;
+                            break;
+                        }
+                    }
+                    if (check==true){
+                        sum=sum+c;
+                    }
+                }
+            }
+            document.getElementById('result').innerHTML=sum;
+        }
+    </script>
+</body>
+</html>

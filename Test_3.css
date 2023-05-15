@@ -1,0 +1,15 @@
+.main{
+    max-width: 1212px;
+    max-height: 854px;
+    padding: 100px 100px;
+}
+
+.main form{
+    width: 327px;
+    height: 64px;
+    border-radius: 4px;
+}
+
+.nav-items{
+    font-family: 'Poppins';
+}
